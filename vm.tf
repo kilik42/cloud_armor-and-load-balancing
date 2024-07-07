@@ -1,8 +1,8 @@
 
 
 #create a vm
-resource "google_compute_instance" "vm_instance_cloud_armor" {
-  name = "vm-instance_cloud_armor"
+resource "google_compute_instance" "instance" {
+  name = "vminstance"
   machine_type = "e2-micro"
   zone = "us-central1-a"
 
