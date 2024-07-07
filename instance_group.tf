@@ -4,7 +4,7 @@ resource "google_compute_instance_group" "instance_group_cloud_armor" {
   zone        = "us-central1-a"
 
  instances = [
-    google_compute_instance_template.unmanaged_instance_template.self_link
+    google_compute_instance_template.unmanaged_instance_template.name
   ]
 
   
