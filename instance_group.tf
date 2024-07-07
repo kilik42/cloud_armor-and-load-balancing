@@ -1,9 +1,9 @@
 resource "google_compute_instance_group_manager" "instance_group_manager_cloud_armor" {
-  name               = "instance-group-manager-cloud-armor"
+  name = "instance-group-manager-cloud-armor"
   base_instance_name = "instance-cloud-armor"
   # instance_template  = google_compute_instance_template.unmanaged_instance_template.self_link
-  zone               = "us-central1-a"
-  target_size        = 3
+  zone = "us-central1-a"
+  target_size  = 3
 
   version {
     name = "v1"

@@ -19,7 +19,7 @@
 
     rule {
         action = "deny(403)"
-        priority = 2000
+        priority = 2147483647
         match {
             versioned_expr = "SRC_IPS_V1"
             config {
