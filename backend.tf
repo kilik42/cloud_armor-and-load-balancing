@@ -2,9 +2,9 @@ resource "google_compute_backend_service" "backend_service" {
   name = "backend-service"
   project = "terraf-392514"
   backend {
-    group = google_compute_instance_group_manager.instance_group_manager_cloud_armor.self_link
+    group = google_compute_instance_group_manager.instance_group_manager_cloud_armor.instance_group
   }
-  health_checks = [google_compute_http_health_check.health_check.self_link]
+  health_checks = [google_compute_region_health_check.health_check.self_link]
   load_balancing_scheme = "INTERNAL_MANAGED"
   protocol = "HTTP"
   timeout_sec = 10
